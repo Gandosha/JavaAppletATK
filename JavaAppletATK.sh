@@ -6,7 +6,6 @@ read javaversion
 echo
 printf "\033[1;33m[Info] Starting to compile JavaAppletATK.java...\033[0m\n"
 javac -source $javaversion -target $javaversion JavaAppletATK.java
-#javac JavaAppletATK.java
 echo
 printf "\033[1;33m[Info] Done.\033[0m\n"
 echo
