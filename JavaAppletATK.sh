@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo
-printf "\033[1;33m[?] What is the version of java that you want to use? (Ex. 1.8)\033[0m\n"
+printf "\033[1;33m[?] What is the version of java that you want to use? (Ex. 1.7)\033[0m\n"
 read javaversion
 echo
 printf "\033[1;33m[Info] Starting to compile JavaAppletATK.java...\033[0m\n"
